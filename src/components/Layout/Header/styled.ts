@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+type Header = {
+  lightMode: boolean;
+};
+
 const DarkHeader = css`
   width: 100%;
   position: absolute;
@@ -127,6 +131,6 @@ const LightHeader = css`
   }
 `;
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled.header<Header>`
   ${({ lightMode }: any) => (lightMode ? LightHeader : DarkHeader)};
 `;
