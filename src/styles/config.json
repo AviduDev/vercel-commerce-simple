@@ -9,7 +9,8 @@
   "sizes": {
     "core": 16,
     "multiplier": 1.721,
-    "list": ["xxs", "xs", "sm", "smx", "md", "mdx", "lg", "xl"],
+    "list": ["xxs", "xs", "sm", "smx", "md", "mdx", "lg", "xl", "xlx"],
     "defaultSize": "smx"
-  }
+  },
+  "wireframeMode": false
 }

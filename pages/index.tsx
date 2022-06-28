@@ -1,10 +1,21 @@
+import AboutUs from "components/AboutUs";
+import Collection from "components/Collection";
+import Features from "components/Features";
+import Hero from "components/Hero";
+import Layout from "components/Layout";
+import Promo from "components/Promo";
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  return <></>;
+  return (
+    <Layout>
+      <Hero />
+      <Collection />
+      <Promo />
+      <AboutUs />
+      <Features />
+    </Layout>
+  );
 };
 
 export default Home;

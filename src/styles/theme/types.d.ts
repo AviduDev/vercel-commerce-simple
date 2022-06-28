@@ -9,18 +9,23 @@ interface ThemeColors {
 interface ThemeSizes {
   core: number;
   multiplier: number;
-  xxs: number;
-  xs: number;
-  sm: number;
-  smx: number;
-  md: number;
-  mdx: number;
-  lg: number;
-  lgx: number;
-  default: number;
+  xxs: string;
+  xs: string;
+  sm: string;
+  smx: string;
+  md: string;
+  mdx: string;
+  lg: string;
+  lgx: string;
+  default: string;
+}
+
+interface ThemeLimits {
+  pageWidth: string;
 }
 
 interface StyledTheme {
   colors: ThemeColors;
   sizes: ThemeSizes;
+  limits: ThemeLimits;
 }
